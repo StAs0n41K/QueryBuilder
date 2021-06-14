@@ -3,7 +3,7 @@
 ## Example
 
 ```python
-from simpleSQLBilder.QueryBuilder import QueryBuilder
+from simpleSQLBuilder.QueryBuilder import QueryBuilder
 
 print(QueryBuilder().from_('users').select('id').select('name', 'email').where('id < 3').build().result) # 'SELECT id,name,email FROM users WHERE id < 3'
 
